@@ -1,23 +1,19 @@
 def make_list():
+    """Takes inputs from user and makes them into a list"""
     alist = []
     counter = 0
     while counter < 3:
         inp = int(get_input())
         alist.append(inp)
         counter = counter + 1
+    return alist
+
 
 
 def get_input():
-    pass
-    # count = 0
-    # a = 'i'
-    # b = []
-    # while count < 3:
-    #     a = input("enter a number")
-    #     count = count + 1
-    #     b.append(a)
-    # print(b)
-
+    """Gets input from user"""
+    a = input("enter a number ")
+    return a
 
 if __name__ == '__main__':
-    get_input()
+    make_list()
