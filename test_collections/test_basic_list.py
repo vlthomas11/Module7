@@ -9,3 +9,5 @@ class TestList(unittest.TestCase):
         self.assertEqual(topic1.make_list(), [5, 5, 5])
 
 
+if __name__ == '__main__':
+    unittest.main()
