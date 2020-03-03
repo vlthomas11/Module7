@@ -1,9 +1,10 @@
 import os as os
+
 file_name = 'student_info.txt'
 
 
 def write_to_file(tup):
-    f = open(file_name, 'w')
+    f = open(file_name, 'a+')
     for i in tup:
         f.writelines(i)
         f.writelines('\t')
@@ -30,11 +31,12 @@ def read_from_file():
     f = open(file_name, 'r')
     line1 = f.read()
     print(line1)
+    f.close()
 
 
 if __name__ == '__main__':
-    get_student_info(name = 'Vickilee')
-    get_student_info(name = 'Larry')
-    get_student_info(name = 'Leona')
-    get_student_info(name = 'Julia')
+    get_student_info(name='Vickilee')
+    get_student_info(name='Larry')
+    get_student_info(name='Leona')
+    get_student_info(name='Julia')
     read_from_file()

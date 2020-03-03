@@ -1,1 +1,5 @@
-Julia Thomas	100	75	
+
+Vickilee	95	80	
+Larry	75	75	75	
+Leona	100	95	100	
+Julia	97	86	100	99	
